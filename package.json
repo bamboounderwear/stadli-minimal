@@ -1,0 +1,19 @@
+{
+  "name": "stadli-minimal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "migrate": "wrangler d1 migrations apply stadli-d1",
+    "types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "eta": "^3.5.0"
+  }
+}

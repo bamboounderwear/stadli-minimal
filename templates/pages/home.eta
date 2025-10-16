@@ -1,0 +1,27 @@
+<h1>Welcome to Stadli Admin</h1>
+<div class="grid grid-2">
+  <section class="card">
+    <h2><%= it.schema.summary.title %></h2>
+    <p><%= it.schema.summary.description %></p>
+  </section>
+  <section class="card">
+    <h3>Quick Links</h3>
+    <ul>
+      <% it.schema.app.navigation.sidebar.forEach(function(s){ %>
+        <li><a href="<%= s.path %>"><%= s.label %></a></li>
+      <% }) %>
+    </ul>
+  </section>
+</div>
+
+<section class="card" style="margin-top:1rem">
+  <h3>Cores</h3>
+  <div class="grid grid-2">
+  <% it.schema.summary.cores.forEach(function(c){ %>
+    <div class="card">
+      <strong><%= c.name %></strong>
+      <p class="badge"><%= c.description %></p>
+    </div>
+  <% }) %>
+  </div>
+</section>

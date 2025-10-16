@@ -1,0 +1,47 @@
+{
+  "name": "stadli-minimal",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-03-07",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  "assets": {
+    "directory": "public"
+  },
+  "vars": {
+    "APP_NAME": "Stadli Admin",
+    "SESSION_COOKIE_NAME": "stadli_sid",
+    "CSP_REPORT_ONLY": "false"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "stadli-d1",
+      "database_id": "4b1235f4-c2a7-4775-9d25-7ad3b7733bd4"
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "SESSIONS_KV",
+      "id": "11799d5c7fa1463da0cba5ceef7e34f6"
+    },
+    {
+      "binding": "CONFIG_KV",
+      "id": "11799d5c7fa1463da0cba5ceef7e34f6"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "ASSETS_BUCKET",
+      "bucket_name": "ASSETS_BUCKETR2Bucket"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "routes": [
+    { "pattern": "stadli.example.com/*", "custom_domain": true }
+  ],
+  "triggers": {
+    "crons": ["0 * * * *"]
+  }
+}

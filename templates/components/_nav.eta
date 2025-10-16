@@ -1,0 +1,10 @@
+<nav class="nav">
+  <% if (it?.nav?.length) { %>
+    <% it.nav.forEach(function(item){ %>
+      <a href="<%= item.path %>" class="<%= it.active === item.id ? 'active' : '' %>"><%= item.label %></a>
+    <% }) %>
+  <% } else { %>
+    <a href="/home" class="<%= it.active === 'home' ? 'active' : '' %>">Home</a>
+  <% } %>
+  <span style="margin-left:auto" class="badge"><%= it.appName || 'Stadli Admin' %></span>
+</nav>

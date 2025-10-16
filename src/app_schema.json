@@ -1,0 +1,99 @@
+{
+  "summary": {
+    "title": "Product Summary",
+    "description": "Stadli is the all-in-one revenue + marketing OS for pro teams outside the big four. It launches with five integrated cores that work together from day one.",
+    "cores": [
+      {
+        "name": "Web App / Website",
+        "description": "A PWA-first team hub combining a modern web experience and branded app shell. Includes Game Day Central, sponsor surfaces, push notifications, and built-in checkout for tickets, merch, and experiences."
+      },
+      {
+        "name": "CRM / 360\u00b0 Fan Profile",
+        "description": "Unified fan database stitching ticketing, merch, and digital touchpoints into a single view. Enables live segmentation, lifecycle tracking, and identity resolution for every fan."
+      },
+      {
+        "name": "Campaign Engine & Playbooks",
+        "description": "Multi-channel campaign system with sports-ready templates and prebuilt revenue plays. Launch push/email automations, drive purchases, and measure closed-loop revenue attribution from message to checkout."
+      },
+      {
+        "name": "Stadli Narratives & Analytics",
+        "description": "Daily role-based digest (email + dashboard) with one-click, prefilled actions tailored to GM, Marketing, and Ops roles. Powered by Stadli Web Tag for standardized analytics, event tracking, and attribution."
+      },
+      {
+        "name": "Commerce & Ticketing",
+        "description": "Native ticketing and ecommerce layer with secure payment processing, unified checkout, fan wallet, and real-time reconciliation with Tixr and Shopify webhooks."
+      }
+    ]
+  },
+  "flagship_features": {
+    "title": "Flagship Features",
+    "description": "Core capabilities that define Stadli\u2019s MVP and roadmap-ready foundation.",
+    "sections": []
+  },
+  "app": {
+    "name": "Stadli Admin",
+    "navigation": {
+      "layout": "sidebar",
+      "sidebar": [
+        {
+          "id": "home",
+          "label": "Home",
+          "path": "/home"
+        },
+        {
+          "id": "web",
+          "label": "Web App / Website",
+          "path": "/web"
+        },
+        {
+          "id": "crm",
+          "label": "CRM / 360 Fan Profile",
+          "path": "/crm"
+        },
+        {
+          "id": "campaigns",
+          "label": "Campaign Engine & Playbooks",
+          "path": "/campaigns"
+        },
+        {
+          "id": "analytics",
+          "label": "Narratives & Analytics",
+          "path": "/analytics"
+        },
+        {
+          "id": "commerce",
+          "label": "Commerce & Ticketing",
+          "path": "/commerce"
+        },
+        {
+          "id": "settings",
+          "label": "Settings & Admin",
+          "path": "/settings"
+        }
+      ]
+    },
+    "mvp_screens": [
+      "/home",
+      "/crm/fans",
+      "/crm/fans/:id",
+      "/crm/segments",
+      "/crm/segments/new",
+      "/campaigns/list",
+      "/campaigns/new",
+      "/campaigns/playbooks",
+      "/analytics/narratives",
+      "/analytics/overview",
+      "/analytics/attribution",
+      "/web/pages",
+      "/web/blocks",
+      "/web/offers-surfaces",
+      "/commerce/catalog/tickets",
+      "/commerce/catalog/products",
+      "/commerce/catalog/offers",
+      "/commerce/orders",
+      "/commerce/checkout",
+      "/settings/users",
+      "/settings/integrations"
+    ]
+  }
+}

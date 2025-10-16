@@ -1,0 +1,7 @@
+<h1>OK</h1>
+<p class="badge">Time: <%= it.now %></p>
+<table>
+  <tr><th>D1</th><td><%= it.db %></td></tr>
+  <tr><th>KV</th><td><%= it.kv %></td></tr>
+  <tr><th>R2</th><td><%= it.r2 %></td></tr>
+</table>

@@ -1,0 +1,6 @@
+<h1><%= it.title %></h1>
+<p class="badge">Stub page: <code><%= it.path %></code>. Replace with real content.</p>
+<ul>
+  <li>POST to this path will validate a CSRF token.</li>
+  <li>Sessions are stored in KV (demo only).</li>
+</ul>
